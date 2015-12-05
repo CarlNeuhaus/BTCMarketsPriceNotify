@@ -1,4 +1,4 @@
-Basic script to query BTCMarkets price and notify via twilio when it reaches a certain low.
+Query BTCMarkets price and notify via twilio when it reaches a certain value.
 
 Run with cron once an hour
 ```
