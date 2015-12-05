@@ -25,8 +25,8 @@ def sendMessage(msg="Error connecting to server"):
         client.messages.create(body=msg, to=to, from_=from_)
         logger.info("Sent twilio message with content {}".format(msg))
 
-    except:
-        logger.error("Could not send twilio message")
+    except twilio.TwilioRestException as e:
+        logger.error("Could not send twilio message: {}".format(e))
 
 domain = "https://api.btcmarkets.net/"
 uri = "market/BTC/AUD/tick"
