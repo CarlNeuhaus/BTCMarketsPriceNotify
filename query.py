@@ -13,8 +13,8 @@ from twilioConfig import twilio_number
 
 logging.basicConfig(filename="query.log",
                     level=logging.INFO,
-                    format="%(asctime)s %(message)s",
-                    datefmt="%Y-%m-%d-%H:%M")
+                    format="%(levelname)s %(asctime)s %(message)s",
+                    datefmt="%Y/%m/%d-%H:%M")
 logger = logging.getLogger(__name__)
 
 
