@@ -4,3 +4,11 @@ Run with cron once an hour
 ```
 0 * * * * /path
 ```
+
+twilioConfig.py is required
+```
+account_sid = ""
+auth_token = ""
+twilio_number = ""
+recp = ""
+```
