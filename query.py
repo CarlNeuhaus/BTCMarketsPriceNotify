@@ -51,7 +51,7 @@ msg = """
     BTCMarkets has BTC for ${0} accurate at {1}. Last trade price was ${2}.
     """.format(ask, ltime, last)
 
-if float(ask) > 550 or float(ask) < 450:
+if float(ask) > 680 or float(ask) < 450:
     sendMessage(msg)
 else:
-    logger.info("Msg not sent due to price range")
+    logger.info("Msg not sent due to price range: {}".format(ask))
